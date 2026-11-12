@@ -13,7 +13,6 @@ body {
 
 header{
 	background-color: white;
-		font-size: 18px;
 }
 
 header .container{
@@ -68,6 +67,16 @@ a {
 	padding: 2rem 0;
 }
 
+.learn-about h2{
+	font-size: 24px;
+	color: #48bb78;
+}
+
+.learn-about h3{
+	font-size: 21px;
+	color: #48bb78;
+}
+
 .learn-about .container .cards{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -87,16 +96,6 @@ a {
 	height: 200px;
 }
 
-.learn-about h2{
-	font-size: 24px;
-	color: #48bb78;
-}
-
-.learn-about h3{
-	font-size: 21px;
-	color: #48bb78;
-}
-
 .testing{
 	background-color: #4A5568;
 	color: white;
@@ -105,8 +104,7 @@ a {
 
 .testing .container{
 	display: flex;
-	flex-direction: space-between;
-	gap: 2rem;
+	justify-content: space-between;
 }
 
 .testing .container .cta{
@@ -114,6 +112,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	min-width: 150px;
 }
 
 .testing .cta a{

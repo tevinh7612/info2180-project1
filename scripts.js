@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function(){
 	
 	form.addEventListener('submit', function(e) {
 		
-		e.preventDefault()
+		e.preventDefault();
 
 		const email = input.value;
 		
 		if (email !== ""){
-			msgArea.innerHTML = `<p>Thank you! Your email address ${email} has been added to our mailing list!</p>`
+			msgArea.innerHTML = `<p>Thank you! Your email address ${email} has been added to our mailing list!</p>`;
 		} else {
-			msgArea.innerHTML = `<p>Please enter a valid email address.</p>`
+			msgArea.innerHTML = `<p>Please enter a valid email address.</p>`;
 		}			
-	})
-})
+	});
+});
