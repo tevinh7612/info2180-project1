@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", function(){
 	const form = document.querySelector('.newsletter form');
 	const input = document.getElementById('email');
 	const msgArea = document.querySelector('.newsletter .message');
-	const submitBtn = document.querySelector('.newsletter .btn');
 	
-	submitBtn.addEventListener('click', function() {
-			
+	form.addEventListener('submit', function(e) {
+		
+		e.preventDefault()
+
 		const email = input.value;
 		
 		if (email !== ""){
